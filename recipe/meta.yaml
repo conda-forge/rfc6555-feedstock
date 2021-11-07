@@ -8,8 +8,6 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/rfc6555-{{ version }}.tar.gz
   sha256: 123905b8f68e2bec0c15f321998a262b27e2eaadea29a28bd270021ada411b67
-  patches:
-    - python.patch
 
 build:
   number: 0
