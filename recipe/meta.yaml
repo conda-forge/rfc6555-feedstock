@@ -1,5 +1,5 @@
 {% set name = "rfc6555" %}
-{% set version = "0.0.0" %}
+{% set version = "0.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,9 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/rfc6555-{{ version }}.tar.gz
-  sha256: 191cbba0315b53654155321e56a93466f42cd0a474b4f341df4d03264dcb5217
-  patches:
-    - python.patch
+  sha256: 123905b8f68e2bec0c15f321998a262b27e2eaadea29a28bd270021ada411b67
 
 build:
   number: 0
@@ -36,7 +34,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'Python implementation of the Happy Eyeballs Algorithm described in RFC 6555'
+  summary: Python implementation of the Happy Eyeballs Algorithm described in RFC 6555
   description: |
     Python implementation of the Happy Eyeballs Algorithm described
     in RFC 6555. Provided with a single file and dead-simple API to
